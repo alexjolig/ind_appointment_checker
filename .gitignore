@@ -1,0 +1,13 @@
+*
+!src/
+!src/*
+!src/**/*
+!.gitignore
+!Dockerfile
+!Makefile
+!LICENSE
+!README.md
+!README
+!requirements.txt
+__pycache__/
+.DS_Store
