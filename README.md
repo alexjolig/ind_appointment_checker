@@ -95,8 +95,23 @@ PICKUP_DOCUMENTS_CHECK_ACTIVE = <True/False Whether you need this appointment ty
 WHATSAPP_MESSAGE_ACTIVE = <True/False Whether you want to be notified by Whatsapp message>
 PHONE_NUMBER_FOR_WHATSAPP_MESSAGE = <A phone number which is active in Whatsapp e.g +31612345678>
 TIME_INTERVAL_TO_CHECK_FREE_SLOTS_IN_SECONDS = <Number of seconds to wait before checking for available slots again>
+DESK = <Abbreviation of the city>
 ```
-Replace the part after `=` with your desired values
+Replace the part after `=` with your desired values.
+
+**NOTE:** For `DESK` use one of these abbreviations for each city you want to make an appointment in:
+```text
+AMSTERDAM => AM
+DEN_HAAG => DH
+DEN_BOSCH => DH
+ZWOLLE => ZW
+HAARLEM => 6b425ff9f87de136a36b813cccf26e23
+```
+For example, if you want to check the available slots in Amsterdam, set the value of `DESK` like this:
+```text
+DESK=AM
+```
+
 
 ### How to run the script
 

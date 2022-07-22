@@ -19,7 +19,7 @@ def check_calendar(check_type: str, desired_date: datetime):
     :param desired_date: The deadline date to find a free slot in the calendar
     :return:
     """
-    url = "https://oap.ind.nl/oap/api/desks/AM/slots"
+    url = f"https://oap.ind.nl/oap/api/desks/{os.getenv('DESK', 'AM')}/slots"
     payload = {
         "productKey": check_type,
         "persons": int(os.getenv("NUMBER_OF_PERSONS", 1)),
